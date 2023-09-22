@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="headerFooter.css" rel="stylesheet" />
+    <link href="pageStyles/subscribeStyle.css" rel="stylesheet" />
+    <script src="web.js" defer></script>
+</head>
+<body>
+    <header>
+        <img
+          src="Assets/Image/logo.png"
+          width="241px"
+          height="70px"
+          class="logo"
+        />
+     <nav>
+          <a class="header-items" href="home.html">Home</a>
+          <a class="header-items" href="sneakers.html">Sneakers</a>
+          <a class="header-items" href="events.html">Events</a>
+          <a class="header-items" href="aboutus.html">About Us</a>
+          <a class="header-items" href="subscribe.html" style="color: #d98e5b;">Subscribe</a>            
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="subscribe">
+      <img class="subscribe-layout" src="Assets/Image/subs.png"/>
+      <div class="subscribe-box">
+        <h2>Hey!</h2>
+        <p>Never miss a sneaker release again - subscribe now to receive real-time notifications,
+           release reminders, and insider info on upcoming drops.</p>
+        <form id="form">
+          <div class="subscribe-input">
+            <div class="input-field">
+              <i class="fa-solid fa-user" style="color: #6d5c56;"></i>
+              <input type="text" placeholder="Name" id="name" required>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope" style="color: #6d5c56;"></i>
+              <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-phone" style="color: #6d5c56;"></i>
+              <input type="text" placeholder="Phone Number"  id="phoneNum" required>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-globe" style="color: #6d5c56;"></i>
+              <select id="country" name="country"  id="country" required>
+                <option value="">Select a country</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="US">United States</option>
+              </select>
+            </div>
+            <div class="terms-condition" style="width: 100%;">
+              <input type="checkbox" id="checkbox-subs">
+              <label for="terms">By checking the box below, you agree to the terms and conditions of this website.</label>
+            </div>
+            <div class="button-subs">
+              <button>Subscribe</button>
+            </div>
+            <p id="error", style="color: #59191f;"></p>
+          </div>
+        </form>
+       
+      </div>
+      <div class="subscribe-layout">
+       <img src="Assets/Image/subs.png"/>
+      </div>
+    </div>s
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-items-our">
+        <h2>Our Company</h2>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-partner">
+        <h2>Products</h2>
+        <a href="#">Nike</a>
+        <a href="#">New Balance</a>
+        <a href="#">Vans</a>
+        <a href="#">Adidas</a>
+        <a href="#">Puma</a>
+        <a href="#">Converse</a>
+      </div> 
+      <div class="footer-container-right">
+        <div class="footer-logo">
+          <img src="Assets/Image/logo.png" width="70%" height="80%"/>
+        </div>
+        <div class="footer-icons"> 
+          <h2>Connect with Us</h2>
+          <ol>
+            <li>
+            </li>
+            <li>
+              <a class="footer-connect" href="https://instagram.com/vaniaprmth_?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram" style="color: #4d3d32;"></i></a>
+            </li>
+            <li>
+              <a class="footer-connect" href="https://twitter.com/paramth"><i class="fa-brands fa-twitter" style="color: #4d3d32;"></i></a>
+
+            </li>
+          </ol>
+        </div>
+        <div class="footer-copyright">
+          <a href="#"><i class="fa-regular fa-copyright" style="color: #4d3d32;"></i>2023 FootLockRE. All right reserved.</a>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
+</body>
+</html>

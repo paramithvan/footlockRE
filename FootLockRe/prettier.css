@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "NohemiMed";
+  src: url("Assets/font/nohemi/Nohemi-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiSemBd";
+  src: url("Assets/font/nohemi/Nohemi-SemiBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-shoes h2 {
+  padding: 3%;
+  font-family: "NohemiSemBd";
+  font-size: 5em;
+  justify-content: center;
+  color: #4d3d32;
+}
+
+.home-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 5%;
+  align-items: first baseline;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.shoes-item {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 3em;
+  transition: 0.3s;
+}
+
+.hide {
+  display: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.shoes-item:hover + .hide {
+  display: flex;
+  font-family: "Plus Jakarta Sans @500", sans-serif;
+  color: #4d3d32;
+  font-size: 2rem;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .home-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .shoes-item {
+    margin-bottom: 1em;
+    max-height: 10em;
+  }
+
+  .shoes-item:hover + .hide {
+    font-size: 0.5em;
+  }
+}

@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "NohemiBold";
+  src: url("Assets/font/nohemi/Nohemi-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiExtBd";
+  src: url("Assets/font/nohemi/Nohemi-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiMed";
+  src: url("Assets/font/nohemi/Nohemi-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("Assets/font/nohemi/Nohemi-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiSemBd";
+  src: url("Assets/font/nohemi/Nohemi-SemiBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 96%);
+  border-bottom: 5px solid #b69a86;
+  padding: 20px 50px;
+  width: 100%;
+  position: sticky;
+}
+
+nav {
+  width: 50%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.header-items {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+  font-size: 1.7em;
+  font-family: "NohemiSemBd";
+  text-transform: uppercase;
+  color: #4d3d32;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.header-items:hover {
+  color: #d98e5b;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.header img {
+  display: flex;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: #c6bcb6;
+  padding: 3em 2em;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 5%;
+}
+
+footer ol {
+  list-style: none;
+  display: flex;
+}
+
+footer ol li {
+  display: inline-block;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.footer-container div {
+  margin-bottom: 0.5em;
+}
+
+.footer-container-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-items-our,
+.footer-partner,
+.footer-container-right {
+  width: 33.3333%;
+  padding: 1em;
+}
+
+.footer-items-our h2,
+.footer-partner h2 {
+  color: #45372d;
+  font-family: "NohemiMed";
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.footer-icons h2 {
+  color: #45372d;
+  font-family: "NohemiMed";
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  justify-content: center;
+}
+
+.footer-items-our a {
+  color: #45372d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.footer-items-our a:hover {
+  color: #d98e5b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.footer-partner a {
+  color: #45372d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.footer-partner a:hover {
+  color: #d98e5b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.footer-icons a {
+  color: #45372d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-decoration: none;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-connect {
+  font-size: 0.5em;
+  margin-right: 1em;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.footer-copyright {
+  justify-content: center;
+}
+
+.footer-copyright a {
+  color: #45372d;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans @500", sans-serif;
+  font-size: 1.5em;
+}
+
+.footer-container-right img {
+  object-fit: contain;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .header-items {
+    font-size: 0.7em;
+    font-family: "NohemiSemBd";
+    text-transform: uppercase;
+    color: #4d3d32;
+  }
+
+  .footer-connect {
+    font-size: 0.2em;
+    margin-right: 1em;
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+
+  .footer-copyright a {
+    color: #45372d;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans @500", sans-serif;
+    font-size: 0.9em;
+  }
+
+  .footer-icons h2 {
+    color: #45372d;
+    font-family: "NohemiMed";
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    justify-content: center;
+  }
+
+  .footer-items-our h2,
+  .footer-partner h2 {
+    color: #45372d;
+    font-family: "NohemiMed";
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 5px solid #b69a86;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2em;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-items-our,
+  .footer-partner,
+  .footer-container-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-items-our h2,
+  .footer-partner h2,
+  .footer-icons h2 {
+    font-size: 1.5em;
+  }
+
+  .footer-items-our a,
+  .footer-partner a,
+  .footer-icons a,
+  .footer-copyright a {
+    font-size: 1.2em;
+  }
+}

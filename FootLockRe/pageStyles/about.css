@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "NohemiBold";
+  src: url("Assets/font/nohemi/Nohemi-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiExtBd";
+  src: url("Assets/font/nohemi/Nohemi-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiMed";
+  src: url("Assets/font/nohemi/Nohemi-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("Assets/font/nohemi/Nohemi-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "NohemiSemBd";
+  src: url("Assets/font/nohemi/Nohemi-SemiBold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.about-us h2,
+.our-slogan h2,
+.store-location h2,
+.our-partner h2 {
+  font-family: "NohemiSemBd";
+  padding: 3%;
+  font-size: 5em;
+  color: #4d3d32;
+  margin: 0;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+
+.about-us p,
+.our-slogan p {
+  padding: 0;
+  padding-right: 3%;
+  padding-left: 3%;
+  text-align: justify;
+  font-size: 2em;
+  color: #6d5c56;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.our-partner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-partner-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-list,
+.partner-list-bawah {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner-list img,
+.partner-list-bawah img {
+  object-fit: contain;
+  width: 27%;
+  margin: 3%;
+}
